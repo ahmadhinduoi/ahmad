@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>مثال على pseudo في CSS</title>
+  <style>
+    
+button:hover {
+  background-color: #005daf;
+  transform: scale(1.1); /* يزيد الحجم بنسبة 10% */
+}
+h2:active{
+         color: rgb(253, 0, 0); 
+}
+
+
+    li:first-child {
+      font-weight: bold;
+      color: rgb(253, 0, 0);
+    }
+       li:nth-child(3){
+      font-weight: bold;
+      color: rgb(112, 0, 240);
+    }
+
+
+
+
+ h1::before {
+  content: "🔥 ";
+  color: red;
+}
+h1::after {
+  content: " 💡";
+  color: blue;
+}
+p::first-letter {
+  font-size: 2em;
+  color: darkgreen;
+}
+p::first-line {
+  font-weight: bold;
+  color: rgb(253, 0, 0);
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+  <h2>قائمة:</h2>
+  <ul>
+    <li>العنصر الأول</li>
+    <li>العنصر الثاني</li>
+    <li>العنصر الثالث</li>
+  </ul>
+  <button>agmaf</button>
+  <hr>
+<p>ahmad</p>
+<h1>hindawi</h1>
+</body>
+</html>
